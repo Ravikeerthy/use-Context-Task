@@ -148,7 +148,7 @@ const App = () => {
   const totalPrice = productData.reduce(
     (acc, data) => acc + data.price * (data.quantity || 1),
     0
-  );
+  ).toFixed(2);
   // Calculate the Total Quantity
   const totalQuantity = productData.reduce(
     (acc, data) => acc + (data.quantity || 1),
