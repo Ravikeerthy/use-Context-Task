@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import { myContext } from "../App";
 import "./Styles/HomeStyle.css";
 
 const UseContext = () => {
-  const [productData, setProductData] = useContext(myContext);
+  const [productData, setProductData] = useContext(myContext); // Use Context used
   return (
     <div>
+      {/* Displaying Data */}
       <div className="container" id="home-container">
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {productData.map((item, index) => {
@@ -37,7 +38,7 @@ const UseContext = () => {
           })}
         </div>
       </div>
-      <Product />
+     
     </div>
   );
 };

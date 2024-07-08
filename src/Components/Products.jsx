@@ -3,9 +3,9 @@ import { myContext } from "../App";
 import "./Styles/ProductsStyle.css";
 
 const UseContext = () => {
-  const [productData, setProductData] = useContext(myContext);
+  const [productData, setProductData] = useContext(myContext); // UseContext Used
 
-  const handleAdd = (id, quantity) => {
+  const handleAdd = (id, quantity) => {  //Handling Adding Button
     setProductData((preData) => {
       return preData.map((item) => {
         if (item.id === id) {
@@ -15,7 +15,7 @@ const UseContext = () => {
       });
     });
   };
-  const handleSub = (id, quantity) => {
+  const handleSub = (id, quantity) => {  //Handling reducing Button
     setProductData((preData) => {
       return preData.map((item) => {
         if (item.id === id && (item.quantity || quantity) > 0) {
@@ -37,7 +37,7 @@ const UseContext = () => {
     });
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = (id) => {  // deleting function
     setProductData((preData) => {
       return preData.filter((item) => item.id !== id);
     });
@@ -50,6 +50,7 @@ const UseContext = () => {
           {productData.map((item, index) => {
             return (
               <>
+              {/* Displaying the Products in card */}
                 <div key={index}>
                   <div className="col">
                     <div className="card">

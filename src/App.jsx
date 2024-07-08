@@ -174,7 +174,6 @@ const App = () => {
           <h3>Total Quantity: {totalQuantity} </h3>
         </div>
 
-        {/* Main Container */}
         <div className="container px-4 px-lg-5 mt-5">
           <myContext.Provider value={[productData, setProductData]}>
             {/* <UseContext /> */}

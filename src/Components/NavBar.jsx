@@ -4,6 +4,7 @@ import "./Styles/NavBarStyle.css";
 const NavBar = ({ totalQuantity }) => {
   return (
     <>
+    {/* Nab Bar Design with Cart quantity using state */}
       <nav className="navbar navbar-expand-lg" id="Nav-design">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
