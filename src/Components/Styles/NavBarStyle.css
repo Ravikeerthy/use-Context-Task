@@ -1,6 +1,6 @@
-.NavBar{
-    height: 100vh;
-    border: 1px black;
-    background-color: rgb(200, 236, 219);
-    color: black;
+#Nav-design{
+    background-color: rgb(251, 248, 248);
+    /* box-shadow: 5px 5px 15px rgb(61, 60, 60,0.5); */
+    
+
 }
